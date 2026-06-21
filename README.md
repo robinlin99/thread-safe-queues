@@ -15,6 +15,15 @@ cmake --build build
 ./build/bench_lock
 ./build/bench_lock_free
 ```
+## Unit Tests
+
+Tests live in `tests/` and use the single-header doctest (`tests/doctest/doctest.h`).
+
+```bash
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+cmake --build build
+ctest --test-dir build --output-on-failure
+```
 
 ## Benchmarks
 

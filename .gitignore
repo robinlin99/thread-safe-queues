@@ -1,5 +1,7 @@
 # Build directories
 build/
+build-*/
+build*/
 cmake-build-*/
 
 # Compiled output
@@ -16,6 +18,8 @@ cmake_install.cmake
 Makefile
 CTestTestfile.cmake
 install_manifest.txt
+compile_commands.json
+Testing/
 
 # IDE/editor
 .vscode/
