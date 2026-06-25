@@ -35,3 +35,11 @@ add_executable(test_lock_free_queue tests/test_lock_free_queue.cpp)
 target_include_directories(test_lock_free_queue PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(test_lock_free_queue PRIVATE Threads::Threads)
 add_test(NAME test_lock_free_queue COMMAND test_lock_free_queue)
+
+add_executable(test_single_threaded_queue tests/test_single_threaded_queue.cpp)
+target_include_directories(test_single_threaded_queue PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+add_test(NAME test_single_threaded_queue COMMAND test_single_threaded_queue)
+
+# Single-threaded queue sample
+add_executable(sample_single_threaded_queue sample_single_threaded_queue.cpp)
+target_include_directories(sample_single_threaded_queue PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
